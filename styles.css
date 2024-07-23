@@ -1,1 +1,63 @@
 /*  your css code here. If applicable */
+/* Reset default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section container */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to ensure image fits properly */
+}
+
+/* Hero image styling */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Hero content styling */
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    max-width: 600px; /* Optional: Adjust based on design */
+}
+
+/* Heading styling */
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Explore button styling */
+.explore-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #ff4500; /* Pinterest-like color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.explore-button:hover {
+    background-color: #ff6347; /* Slightly lighter on hover */
+}
+
